@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BillEzy</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.buttons').click(function () {
+                var buttonvalue = $(this).attr('data-filter');
+
+                if (buttonvalue == 'all') {
+                    $('.image-filter').show(1000);
+                }
+                else {
+                    $('.image-filter').not('.' + buttonvalue).hide('200');
+                    $('.image-filter').filter('.' + buttonvalue).show('200');
+                }
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Header Start -->
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <h1>BillEzy</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a href="portfolio.html" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                            data-target="dropdown_target">Portfolio
+                            <span class="caret"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                            <a href="#" class="dropdown-item">2D</a>
+                            <a href="#" class="dropdown-item">3D</a>
+                            <a href="#" class="dropdown-item">VR</a>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header End -->
+
+    <!-- Banner -->
+
+    <section class="banner">
+        <div class="container-fluid">
+            <div class="text-about">
+                <h1>Portfolio</h1>
+                <p><span style="color: #f24259;">Home <i class="fa fa-angle-double-right" aria-hidden="true"
+                            style="font-size: 12px;"></i></span> Portfolio</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner End -->
+
+    <!-- Portfoilo -->
+    <div id="portfolio" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box">
+                    <ul class="bg-light">
+                        <li>
+                            <a class="buttons active" data-filter="all"><i class="fas fa-globe" style="font-size: 14px;"></i>  All</a>
+                            <a class="buttons" data-filter="2d"><i class="far fa-clone" style="font-size: 14px;"></i>  2D</a>
+                            <a class="buttons" data-filter="3d"><i class="fab fa-unity" style="font-size: 14px;"></i>  3D</a>
+                            <a class="buttons" data-filter="vr"><i class="fas fa-vr-cardboard" style="font-size: 14px;"></i>  VR</a>
+                        </li>
+                    </ul>
+                    <div class="imgbox-port">
+                        <img src="images/port/01.jpg" class="image-filter 3d" />
+                        <img src="images/port/02.jpg" class="image-filter 3d" />
+                        <img src="images/port/03.jpg" class="image-filter 2d" />
+                        <img src="images/port/04.jpg" class="image-filter 2d" />
+                        <img src="images/port/05.jpg" class="image-filter 2d" />
+                        <img src="images/port/06.jpg" class="image-filter vr" />
+                        <img src="images/port/07.jpg" class="image-filter vr" />
+                        <img src="images/port/08.jpg" class="image-filter 2d" />
+                        <img src="images/port/09.jpg" class="image-filter 3d" />
+                        <img src="images/port/10.jpg" class="image-filter 2d" />
+                        <img src="images/port/11.jpg" class="image-filter 2d" />
+                        <img src="images/port/12.jpg" class="image-filter 3d" />
+                        <img src="images/port/13.jpg" class="image-filter 3d" />
+                        <img src="images/port/14.jpg" class="image-filter 2d" />
+                        <img src="images/port/15.jpg" class="image-filter vr" />
+                        <img src="images/port/16.jpg" class="image-filter vr" />
+                        <img src="images/port/17.jpg" class="image-filter 2d" />
+                        <img src="images/port/18.jpg" class="image-filter 3d" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfoilo End -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 content">
+                    <h5>About Company</h5>
+                    <p>Hyposoft is a pioneer in providing digital transformation solutions and helping
+                        businesses stay relevant in a highly connected, rapidly evolving world.
+                    </p>
+                </div>
+                <div class="col-sm-1 content"></div>
+                <div id="links" class="col-sm-2 content">
+                    <h5>Links</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 content">
+                    <h5>Our Works</h5>
+                    <ul>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 content">
+                    <h5>Contact Us</h5>
+                    <p>
+                        <!-- <input type="text" placeholder="Email" class="text-box">
+                        <input type="submit" value="Submit" class="button"> -->
+
+                        #718, Manjeera Majestic, <br>Near JNTU, KPHB,<br> Hyderabad.<br>
+                        <span style="color: #868E96;">Email:</span>Info@hyposoft.in<br>
+                        <span style="color: #868E96;">Phone:</span>+914048568449
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer End -->
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    
+</body>
+</html>
