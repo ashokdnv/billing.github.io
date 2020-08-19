@@ -553,15 +553,7 @@ header {
     .data h1{
      font-size: 28px;
     }
-    .data p{
-        text-align:justify;
-        color: #000000;
-        font-size: 15px;
-        padding: 0px 30px;
-        margin-bottom: 10px;
-        padding-right: 100px;
-        display:inline-block;
-    }
+
     .navbar-expand-md .navbar-collapse{
         padding: 20px;
         color: white;
@@ -630,7 +622,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 415px) {
     .header{
         height:460px;
     }
@@ -649,9 +641,13 @@ header {
         margin-top: 60px;
     }
     
-    .data p {
-        text-align: left;
+    .icondata__icons {
+        padding: 0 7px 0 0;
+    }
+    
+    .icondata__content {
         font-size: 16px;
+        flex: 0 0 80%;
     }
     
     .data button {
