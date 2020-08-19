@@ -65,19 +65,25 @@ header {
     color: #000000;
 }
 
+.icondata {
+    display: flex;
+}
+
+.icondata__icons {
+    padding: 3px 10px 0 0;
+}
+
+.icondata__content {
+    font-size: 20px;
+    color: #000000;
+}
+
 .data .icons-main {
     color: #FF914C;
 }
 
-.data p {
-    text-align: justify;
-    font-size: 20px;
-    color: #000000;
-    margin-bottom: 18px;
-}
-
-.data .last {
-    margin-bottom: 40px;
+.icondata .last {
+    margin-bottom: 20px;
 }
 
 .data button {
