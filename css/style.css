@@ -332,16 +332,16 @@ header {
 
 #footer ul li a{
     text-decoration: none;
-    color: #FFFFE0;
+    color: #b3b3b1;
 }
 
 #footer h5 {
-    color: #aaa8a8;
+    color: #FEBD59;
     margin-bottom: 20px;
 }
 
 #footer p {
-    color: #FFFFE0;
+    color: #b3b3b1;
     font-size: 15px;
     line-height: 200%;
 }
