@@ -105,7 +105,7 @@ header {
 .data .button-full {
     background-color: #FF914C;
     margin-right: 20px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .data .button-full:hover {
@@ -115,7 +115,7 @@ header {
 .data .button-empty {
     background-color: transparent;
     border: 1px solid #FF914C;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .data .button-empty:hover {
@@ -124,7 +124,6 @@ header {
 }
 
 #features-one {
-    background: #fff9f6;
     font-family: 'Nunito', sans-serif;
     padding: 100px 0;
 } 
@@ -140,27 +139,27 @@ header {
     height: 100%;
 }
 
-
 .image-back img {
     height: 370px;
     width: auto;
 }
 
-.back h1 {
+.back h1,
+.back1 h1 {
     font-size: 45px;
     font-weight: 600;
     padding: 50px 0 10px 0;
     color: #3a3a3a;
 }
 
-.back p {
+.back p,
+.back1 p {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
 }
 
 #features-two {
-    background: #f3f2f2;
     font-family: 'Nunito', sans-serif;
     padding: 100px 0;
 }
@@ -175,27 +174,16 @@ header {
     margin-top: -20px;
     padding-bottom: 80px;
 }
+
 #cards .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#cards .card:hover {
-    animation-name: card;
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
-    transition: all;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
+
+.main-card {
+    transition: 0.4s;
 }
 
-@keyframes card {
-    0% {top: 0px;}
-    100% {top: -20px;}
-}
-
-#cards .card a {
-   text-decoration: none;
-   color: #FEBD59;
-}
+.main-card:hover {transform: scale(1.10);}
 
 .icon {
     color: #FEBD59;
@@ -212,16 +200,6 @@ header {
     margin-top: 45px;
     text-decoration: underline;
 }
-
-/* #pricing h2:after {
-    content:"";
-    display: inline-block;
-    height: 0.5em;
-    vertical-align: bottom;
-    width: 30px;
-    margin-left: 30px;
-    border-top: 2px solid #FEBD59; */
-/* } */
 
 #pricing p {
     font-weight: 400;
@@ -358,7 +336,6 @@ header {
 #footer h5 {
     color: #aaa8a8;
     margin-bottom: 20px;
-    text-align: justify;
 }
 
 #footer p {
@@ -367,7 +344,7 @@ header {
     line-height: 200%;
 }
 
-#footer .text-box {
+/* #footer .text-box {
     display: inline-block;
     padding: 5px 25px;
     border: none;
@@ -382,7 +359,7 @@ header {
     border-radius: 2px;
     background-color: #FEBD59;
     color: #fff;
-}
+} */
 
 /* -------------------------------------- */
 /*--- SERVICES ---*/
@@ -543,13 +520,15 @@ header {
 /* MEDIA QUERIES */
 /* ---------------------------------- */
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     header{
         height:580px;
     }
+
     .logo img{
         height:50px;     
     }
+
     .data h1{
      font-size: 28px;
     }
@@ -568,9 +547,9 @@ header {
         height: 420px;
         width: auto;
     }
-    .back p{
+    /* .back p{
         padding:0px 20px 0px 20px;
-    }
+    } */
     #features-one{
         padding:20px;
     } 
@@ -619,153 +598,6 @@ header {
         margin-top: 10px;
         margin-left: 10px;
         font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 415px) {
-    .header{
-        height:460px;
-    }
-    .data-right {
-        display: none;
-    }
-
-    .logo img {
-        height: 40px;
-        width: auto;
-        padding-left: 13px;
-    }
-    
-    .data h1 {
-        font-size: 25px;
-        margin-top: 60px;
-    }
-    
-    .icondata__icons {
-        padding: 0 7px 0 0;
-    }
-    
-    .icondata__content {
-        font-size: 16px;
-        flex: 0 0 80%;
-    }
-    
-    .data button {
-        padding: 8px 20px;
-    }
-    
-    .data button a {
-        letter-spacing: 0px;
-        font-weight: 600;
-    }
-    
-    .data .button-full {
-        margin-right: 15px;
-    }
-    
-    .data .button-full:hover {
-        transform: scale(1.02);
-    }
-    .image-back img{
-        height: 271px;
-        width:100%;
-    }   
-    .back{
-     margin-right: 30px;   
-    }
-    .image-right img{
-        height: 272px;
-        width: 100%;
-        padding-left: 6px;
-    }  
-    .contact-box {
-        height: 500px;
-        width: 100%;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-    #footer p {
-        font-size: 14px;
-    }
-    #cards{
-        margin-top: 20px;
-        padding-bottom: 22px;
-    }
-    .back h1 {
-        font-size: 45px;
-        font-weight: 600;
-        padding: 5px 0 10px 0;
-        color: #3a3a3a;
-    }
-
-    .signup {
-        height: 100vh;
-        background-image: url("../images/homepage/slider/slider03.jpg");
-        background-repeat: no-repeat;
-    }
-    
-    .signup-box {
-        background-color: #FEBD59;
-        padding: 20px;
-        border-radius: 15px;
-        margin-top: 60px;
-        font-family:sans-serif;
-        cursor: pointer;
-        transition: 0.2s;
-        background-image: linear-gradient(-90deg, #ffb23e, #FEBD59);
-    }
-    
-    .signup-box:hover {
-        transform: scale(0.95);
-    }
-    
-    .signup-data {
-        color: #000;
-    }
-    
-    .signup-details {
-        margin-top: 30px;
-        padding: 20px 0px 60px;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    
-    .signup-details h3 {
-        font-size: 25px;
-        /* font-family: 'Nunito', sans-serif;
-        padding-top: 20px;
-        padding-bottom: 50px; */
-    }
-    
-    .signup-details-input input {
-        font-size: 15px;
-        padding: 8px 50px 2px 8px;
-        background: transparent;
-    }
-    
-    .signup-details-input button {
-        padding: 8px 80px;
-        border-radius: 25px;
-        margin-top: 30px;
-    }
-    
-    .signup-details-input button:focus {outline: 0;}
-    
-    .signup-details-input button a {
-       text-decoration: none;
-       color: #000;
-       font-size: 15px;
-       letter-spacing: 1px;
-    }
-    
-    .signup-details-input p {
-        margin-top: 10px;
-        margin-left: 28px;
-    }
-    
-    .signup-details-input p a {
-        text-decoration: none;
-        color: #db8605;
     }
 }
 
@@ -827,4 +659,191 @@ header {
 .card-3.animate__animated
  {
     opacity: 1;
+}
+
+
+@media (max-width: 480px) {
+    header {
+        height:720px;
+    }
+
+    .hmbtn {
+        display: none;
+    }
+
+    .data-right {
+        display: none;
+    }
+
+    .logo img {
+        height: 65px;
+        width: auto;
+        padding-left: 13px;
+    }
+    
+    .data h1 {
+        font-size: 32px;
+        margin-top: 40px;
+        line-height: 45px;
+    }
+
+    .icondata__icons {
+        padding: 4px 10px 0 0;
+    }
+    
+    .icondata__content {
+        font-size: 19px;
+        width: 80%;
+    }
+
+    .icondata .last {
+        margin-bottom: 25px;
+    }
+
+    .data button {
+        padding: 10px 25px;  
+    }
+    
+    .data .button-full {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .data .button-empty {
+        display: block;
+    }
+    
+    #cards {
+        margin-top: 25px;
+    }
+
+    .main-card {
+        margin-bottom: 10px;
+    }
+
+    .main-card:hover {transform: scale(1);}
+
+    #features-one {
+        background: #f1f1f1;
+        padding: 60px 0;
+    }
+
+    #features-two {
+        padding: 50px 0 60px 0;
+    }
+
+    .image-back img {
+        height: 250px;
+        width: 100%;
+    }
+
+    .image-right img {
+        height: 250px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .back h1 {
+        font-size: 35px;
+        font-weight: 600;
+        padding: 50px 0 15px 15px;
+    }
+
+    .back1 h1 {
+        font-size: 35px;
+        font-weight: 600;
+        padding: 0 0 15px 15px;
+        
+    }
+    
+    .back p,
+    .back1 p {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        width: 90%;
+        text-align: justify;
+        float: right;
+        padding-right: 10px;
+    }
+
+    .back1 p {
+        padding-bottom: 20px;
+    }
+
+    #pricing h2{
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    .contact-box {
+        margin: 0;
+        background: #FEBD59;
+    }
+
+    .contact-title {
+        color: #000000;
+    }
+    
+    .contact-title h3 {
+        font-weight: 500;
+        font-size: 30px;
+    }
+    
+    .contact-title p {
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 13px;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+    border-bottom: 1px solid #000;
+    color: #000;
+    }
+
+    #map button {
+        margin-top: 30px;
+        background-color: rgb(255, 145, 76);
+        color: #000;
+        padding: 8px 15px;
+        font-size: 17px;
+        font-weight: 500;
+        border-radius: 5px;
+        letter-spacing: 0;
+    }
+    
+    #footer h5,
+    .content {
+        text-align: center;
+    }
+
+    #footer h5 {
+        color: #FEBD59;
+        font-size: 22px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    #footer p,
+    #footer ul li a {
+        color: #b3b3b1;
+        font-size: 15px;
+    }
+
+    #footer .foot {
+        padding-bottom: 25px;
+        width: 85%;
+        margin: auto;
+    }
+
+    
+
+
+
+
+
+
+
+
 }
