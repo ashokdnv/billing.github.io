@@ -196,7 +196,7 @@ header {
     font-weight: 600;
     font-size: 50px;
     position: relative;
-    color: #f59504;
+    color: #FEBD59;
     margin-top: 45px;
     text-decoration: underline;
 }
@@ -252,10 +252,11 @@ header {
     margin-top: -30px;
     margin-left: -20px;
     border-radius: 3px;
+    background: #FEBD59;
 }
 
 .contact-title {
-    color: #fff;
+    color: #000;
     margin-left: 15px;
 }
 
@@ -275,9 +276,9 @@ header {
 #contact-form textarea {
     background: transparent;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
     border-radius: 0;
-    color: #fff;
+    color: #000;
     margin-left: 8px;
 }
 
@@ -297,16 +298,17 @@ header {
 
 #map button {
     margin-top: 20px;
-    background-color: #FEBD59;
-    color: #fff;
+    background-color: rgb(255, 145, 76);
+    color: #000;
     padding: 8px 20px;
     border: none;
     border: 1px solid #FEBD59;
-    border-radius: 2px;
+    border-radius: 5px;
     transition: 0.2s;
     margin-left: 8px;
-    letter-spacing: .5px;
-    font-size: 16px;
+    letter-spacing: 0;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 #map button:hover,
@@ -778,11 +780,6 @@ header {
 
     .contact-box {
         margin: 0;
-        background: #FEBD59;
-    }
-
-    .contact-title {
-        color: #000000;
     }
     
     .contact-title h3 {
@@ -796,21 +793,10 @@ header {
         margin-top: 13px;
     }
 
-    #contact-form input,
-    #contact-form textarea {
-    border-bottom: 1px solid #000;
-    color: #000;
-    }
-
     #map button {
         margin-top: 30px;
-        background-color: rgb(255, 145, 76);
-        color: #000;
         padding: 8px 15px;
         font-size: 17px;
-        font-weight: 500;
-        border-radius: 5px;
-        letter-spacing: 0;
     }
     
     #footer h5,
