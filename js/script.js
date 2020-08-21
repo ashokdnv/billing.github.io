@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+    $('.slide').waypoint(function(direction) {
+        if(direction == "down") {
+            $('.slide').addClass('sticky');
+        } else {
+            $('.slide').removeClass('sticky');
+        }}, {
+            offset: '-500px'
+    });
+
     $('.card-1').waypoint(function(direction) {
         $('.card-1').addClass('animate__animated animate__fadeInUp')
     }, {

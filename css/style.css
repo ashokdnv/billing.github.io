@@ -49,6 +49,23 @@ header {
     box-shadow: 0;
 }
 
+/* Sticky Navigation */
+
+.sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #FEBD59;
+    z-index: 9999;
+}
+
+
+.sticky .logo img {
+    height: 50px;
+    padding: 0px 0px 0px 5px;
+}
+
+
 .data  {
     display: block;
     position: absolute;
@@ -517,6 +534,95 @@ header {
     color: #db8605;
 }
 
+
+/* -------------------------------------- */
+/*--- SIGN IN ---*/
+/* -------------------------------------- */
+
+.signin {
+    height: 100vh;
+    background-image: url("../images/homepage/slider/slider03.jpg");
+    background-repeat: no-repeat;
+}
+
+.signin-box {
+    background-color: #FEBD59;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 60px;
+    font-family:sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
+    background-image: linear-gradient(-90deg, #ffb23e, #FEBD59);
+}
+
+.signin-box:hover {
+    transform: scale(0.95);
+}
+
+.signin-data {
+    color: #000;
+}
+
+.signin-details {
+    margin-top: 30px;
+    padding: 20px 0px 60px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signin-details h3 {
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.signin-details-input input {
+    font-size: 20px;
+    padding: 10px 100px 4px 10px;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #FEBD59;
+    border-radius: 0;
+    background: transparent;
+    color: #000;
+}
+
+.signin-details-input button {
+    padding: 10px 120px;
+    border-radius: 25px;
+    margin-top: 30px;
+    background-color: #faab35;
+    border: 0;
+    outline: 0;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.signin-details-input button:hover,
+.signin-details-input button:active {
+    transform: scale(1.02);
+}
+
+.signin-details-input button:focus {outline: 0;}
+
+.signin-details-input button a {
+   text-decoration: none;
+   color: #000;
+   font-size: 18px;
+   letter-spacing: 1px;
+}
+
+.signin-details-input p {
+    margin-top: 10px;
+    margin-left: 28px;
+}
+
+.signin-details-input p a {
+    text-decoration: none;
+    color: #db8605;
+}
 
 /* ---------------------------------- */
 /* MEDIA QUERIES */
